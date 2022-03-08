@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>	
+        function f_hide(a) {
+            document.getElementById(a).style.display = 'none';
+            //alert('tulisan menghilang');
+        }
+
+        function f_show(a) {
+            document.getElementById(a).style.display = 'block';
+        }
+	</script>
+	<style>
+       p{
+           display: none;
+       }
+       button{
+           border: 1px solid black;
+           border-radius: 10px;
+       }
+       
+    </style>
+</head>
+<body>
+
+
+    <h3 >Wisata Bahari Lamongan</h3>
+    <img class="gambar" src="wbl.jpg" style="height: 25%;" onclick="f_show('demo1'); f_hide('head1')">
+    <p id = "demo1" style="text-align:left; width: 50%;" > Wisata Bahari Lamongan memiliki lebih dari 50 wahana dan kita bisa menikmatinya hanya dengan membayar senilai Rp, 75.000 / (per 7 April 2021). WBL terletak di kecamatan Paciran<br><br><button type="button" id="demo1"
+        onclick="f_hide('demo1')">
+        Hide text!</button></p>
+        <hr>
+        
+    <h3 >Air Terjun Ngelirip</h3>
+    <img class="gambar" src="ngelirip.jpg" style="height: 25%;" onclick="f_show('demo2')">
+    <p id = "demo2" style="text-align:left; width: 50%;" > Ngelirip memiliki tiket masuk senilai Rp. 5000 dengan biaya parkir Rp. 3000. Air terjun Ngelirip terletak di desa Ngelirip, Kabupaten Tuban <br><br><button type="button" id="demo2"
+        onclick="f_hide('demo2')">
+        Hide text!</button></p>
+        <hr>
+        
+    <h3>Pantai Remen</h3>
+    <img class="gambar" src="remen.jpg" style="height: 25%;" onclick="f_show('demo3')">
+    <p id = "demo3" style="text-align:left; width: 50%;" > Pantai remen terletak di kecamatan Jenuh, Kabupaten Lamongan, dimana jika kamu berada di Pantai Remen akan terlihat jelas cerobong asap tinggi menjulang dimana itu ada cerobong asap dari PLTU Tanjung Awar-Awar.  <br><br><button type="button" id="demo3"
+        onclick="f_hide('demo3')">
+        Hide text!</button></p>
+        
+        <hr>
+    <h3>Bukit Setigi</h3>
+    <img class="gambar" src="setigi.jpg" style="height: 25%;" onclick="f_show('demo4')">
+    <p id = "demo4" style="text-align:left; width: 50%;" > Setigi terletak di desa Sikapuk, Kabupaten Gresik. Desa Sikapuk dulu terkenal dengan debu yang disebabkan oleh angkut hasil tambang batu, yang sekarang dimanfaatkan oleh kepala daerah sebagai wisata unggulan desa sikapuk.  <br><br><button type="button" id="demo4"
+        onclick="f_hide('demo4')">
+        Hide text!</button></p>
+        <hr>
+        
+    <h3>Candi Borobudur</h3>
+    <img class="gambar" src="borobudur.jpg" style="height: 25%;" onclick="f_show('demo5')">
+    <p id = "demo5" style="text-align:left; width: 50%; " > Candi borobudur sebenernya terletak di Magelang, namun tak sedikit orang mengira bahwa borobudur berada di Yogyakarta dimana keduanya berbeda provinsi. Tak bisa dipungkiri kerancuan tersebut terjadi disebabkan maraknya Study Tour yang tujuannya ke Yogyakarta namun berkunjung ke borobudur pula.<br><br><button type="button" id="demo5"
+        onclick="f_hide('demo5')">
+        Hide text!</button></p>
+    <hr>
+
+</body>
+
+</html>
